@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PaymentService } from '../services/payment.service';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { data } from 'jquery';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class PaymentFormComponent implements OnInit{
   errorMessage:any='';
   flag:boolean =false;
 
-  constructor(private paymentService: PaymentService ) {}
+  constructor(private paymentService: PaymentService , private router:Router) {}
 
   ngOnInit(): void {
     this.price = this.paymentService.price
@@ -31,8 +32,10 @@ export class PaymentFormComponent implements OnInit{
     if (this.form.valid) {
       const data = {token : "tok_visa" , amount : this.price , description : this.form.value.description}
       this.paymentService.submitPayment(data).subscribe(res=>{
-        console.log(res);
-
+        if (res == "success"){
+          alert("Payment Successfull");
+          this.router.navigate(['/profile']);
+        }
       })
     }else{
       this.flag = true;

@@ -11,6 +11,7 @@ export class PaymentService {
   constructor(private http:HttpClient) { }
 
   submitPayment(data:any) {
+    console.log(data);
     return this.http.post(`${this.apiUrl}/stripe`, data )
   }
 
