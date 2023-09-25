@@ -1,11 +1,19 @@
 # UField
 
-Developed a user-friendly platform that empowers playground owners to effortlessly add and customize their playground listings. Owners have full control over details, including pricing and reservation time slots.
+Developed an ERP system tailored for Magalis's company, providing comprehensive control and management across various key business areas. This robust system seamlessly handles:
 
-For players, the platform provides a seamless experience, allowing them to:
+Warehouse management
+Product categorization
+Supplier interactions
+Purchase tracking
+Manufacturing processes
+Financial management
+Shipping logistics
+System administration
+HR management and control
+Customized reporting
+User permissions and access control
+This ERP solution optimizes operational efficiency and decision-making while streamlining workflows, ensuring compliance, and enhancing overall productivity.
 
-Browse a comprehensive list of available playgrounds.
-Choose their preferred reservation time.
-Complete payments securely using Visa.
-This solution bridges the gap between playground owners and players, enhancing accessibility and convenience for both parties.Developed a user-friendly platform that empowers playground owners to effortlessly add and customize their playground listings. Owners have full control over details, including pricing and reservation time slots. For players, the platform provides a seamless experience, allowing them to: Browse a comprehensive list of available playgrounds. Choose their preferred reservation time. Complete payments securely using Visa. This solution bridges the gap between playground owners and players, enhancing accessibility and convenience for both parties.
+
 Skills: REST APIs · Angular · MySQL · Laravel · Bootstrap
